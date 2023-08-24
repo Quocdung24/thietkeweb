@@ -1,0 +1,88 @@
+<!DOCTYPE >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="demo.css"/>
+        <title>Thiết kế web đầu tiên</title>
+    <style>
+    .thuoctinh
+{   display:flex;
+    justify-content: ;
+}
+.color
+{
+    color:rgb(76, 115, 212);
+    background-color: rgba(105, 148, 228, 0.891);
+}        
+</style>
+
+    </head>
+    <body>
+        <div>
+            <h1>Dog D.Dog</h1>
+            <img src="../Anh/anh3.png" style="width: 230px;height: 250px;float:right;">
+        <h2 class="color">About</h2>
+        <p>Woof woof<br>Hi, I'm Dog. I love <span style="color:cornflowerblue">User Interfere Design.</span></p>
+        </div>
+        <div>
+        <h2 class="color">Course</h2>
+        <p>Here are some courses I've taken:</p>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <th>Course Number</th>
+                <th>Course Title</th>
+                <th>Semester Taken</th>
+            </tr>
+            <tr>
+                <th colspan="3">For Credit</th>
+            </tr>
+            <tr>
+                <th style="color: #40679b;">6.813</th>
+                <td style="color: #6293d2; font-family: 'Helvetica Now';">User Interface Design</td>
+                <td style="color: #6293d2; font-family: 'Helvetica Now';">Spring 2014</td>
+            </tr>
+            <tr>
+                <th style="color: #40679b;">6.034</th>
+                <td>Artificial Intelligence</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <th style="color: #40679b;">6.006</th>
+                <td>Introduction to Algorithms</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <th colspan="3">Listener</th>
+            </tr>
+            <tr>
+                <th style="color: #6293d2;">6.867</th>
+                <td>Machine Learning</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <th style="color: #6293d2;" >6.830</th>
+                <td>Data Systems</td>
+                <td>Fall 2012</td>
+            </tr>
+        </table>
+        </div>
+        <div>
+            <h2 class="color">
+                Interest
+            </h2>
+            <p>
+                I am interested <b>HCI</b>, memes and youbtube videos
+            </p>
+        </div>
+        <div>
+            <h2 class="color"> Submit Pet Information</h2>
+            <p>Would you love to know what kinds of pets you 'own' &#40you'll never own me&#41. Submit below!</p>
+            <p>Name:<input type="text"></input></p>
+            <p>Phylum:<input type="text"></p>
+            <p>Gender:<input type="text"></p>
+            <input type="button" value="Submit">
+        </div>
+        
+    </body>
+</html>
