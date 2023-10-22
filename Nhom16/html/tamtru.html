@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/tamtru.css">
+        <!-- <link rel="stylesheet" href="../css/baitaplon.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dcss/giaykhaisinh.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/offcanvas-navbar/">
+        <link rel="stylesheet" href="dangky.html">
+        <link rel="stylesheet" href="dangnhap.html">
+        <title>Quản lí hộ khẩu</title>
+        <script src="../javascript/java.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    </head>
+    <body>
+      
+      <div class="menu">
+        <div class="first">
+                <img src="../baitaplon/huy.png" >
+            <p>
+                Cổng thông tin quốc gia về <br>
+                quản lí hộ khẩu dân cư
+            </p>
+            
+        </div>  
+      <div >
+        
+          <li >
+            <a  href="dangnhap.html"  ">Sign Up </a>
+          </li>
+          <li >
+            <a  href="dangky.html" "> Log in </a>
+          </li>
+        
+        
+        
+      </div>
+    </div>
+   
+    <div class="instruction " >
+        <nav>
+            <ul>
+                <li>
+                  <a class="dropbtn"  href="baitaplon.html" onclick="an('tt') ;hien('container1');an('cuoi')"><i class="fa fa-fw fa-home"></i> Home</a> 
+                </li>
+                
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="ttch.html" onclick="hien('tt'); hien('ttch');an('tttv1');an('tttv2');an('tttv3');an('ttch1');an('container1')">Hồ sơ cá nhân</a>
+                    <!-- cần bổ sung giao diện kéo xuống thông tin cá nhân -->
+                    <div class="dropdown-content">
+                      <!-- <a href="#ttch" onclick="hien('tt')">Thông tin cá nhân</a> -->
+                      <!-- <a href="#">Xuất trình giấy tờ</a> -->
+                      <!-- <a href="#tttv1" onclick="myFunctionSearch1">Quản lí thành viên</a> -->
+                      <!-- <a href="#">Chỉnh sửa thông tin</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" onclick="hien('tt');hien('ttch');an('ttch1');an('tttv1');an('tttv2');an('tttv3');an('container1')" href="ttch.html">Tra cứu thông tin</a>
+                    <div class="dropdown-content">
+                      <a href="ttch.html" onclick="hien('ttch');hien('ttch1');an('tttv3');an('tttv1');an('tttv2');hien('tt');an('container1')">Thông tin chủ hộ</a>
+                      <a href="tttv.html" onclick="click0('tttv1');an('ttch');hien('ttch1');an('tttv2');an('tttv3');hien('tt');an('container1')">Thông tin thành viên</a>
+                      <!-- <a href="#">Các thành viên khác</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn">Xuất trình giấy tờ</a>
+                    <div class="dropdown-content">
+                      <a href="giaykhaisinh.html">Giấy khai sinh</a>
+                      <a href="kethon.html">Giấy kết hôn</a>
+                      <a href="tamtru.html">Giấy chứng nhận tạm trú</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="khac1.html">Khác</a>
+                    <div class="dropdown-content">
+                      <a href="khac1.html">Điều khoản & dịch vụ</a>
+                      <!-- <a href="#">Hotline hỗ trợ</a> -->
+                      <a href="khac2.html">Ý kiến phản hồi</a>
+                      <a href="khac3.html">Xin cấp giấy tờ</a>
+                    </div>
+                  </li>
+                  <li class="dropdown search-container" >
+                    <a  class="dropbtn" href="taikhoan.html" onclick="an('container1');hien('cuoi')" ><i class="fa fa-fw fa-user"></i> </a>
+                    <div class="dropdown-content dropdown-content1">
+                      <a href="taikhoan.html#tttk">Thông tin tài khoản</a>
+                      <a href="taikhoan.html#mk">Cài đặt & Quyền Riêng Tư</a>
+                      <a href="taikhoan.html#nk">Quản lý thiết bị</a>
+                      <a href="dangnhap.html" onclick="alert2()">Đăng xuất</a>
+                    </div>
+                  </li>
+                  <form >
+                  <li class="dropdown search-container">
+                    <a class="dropbtn " href="#search" onclick="click0('searchan'),viet()"><i class="fa fa-fw fa-search"></i> Search</a> 
+                  </li>
+                </form>
+            </ul>
+        </nav> 
+    </div>
+    <div class="hoso "  >
+      <div class="w3-content learntocodecontent" > 
+        
+        <form class="example"  >
+          <input type="text" placeholder="Search here..." id="search"  autocomplete="off"   >
+          <i class="fa fa-fw fa-search" onclick="alert1()" ></i>
+        </form>  
+        <h3 id="searchan"  > 
+         
+        </h3>
+      </div>
+    </div>
+
+    <div class="dtongthe">
+        <div class="header">
+            <h2>CỘNG HÒA XÃ HÔI CHỦ NGHĨA VIỆT NAM</h2>
+            <h2 >Độc lập-Tự do-Hạnh phúc</h2>
+            <h1>ĐƠN XIN XÁC NHẬN TẠM TRÚ</h1>
+            <br>
+            <h2><span class="kinhgui" >Kính gửi:</span>Công an phường Láng Hạ</h2>
+        </div>
+        <div class="noidung">
+            <h2>Tên tôi là :..............NGUYỄN THANH MINH..............................................................</h2>
+            <h2>Ngày sinh: ............16/07/1974..........................................................................................</h2>
+            <h2><span>Số CMND: ..001236987532...</span><span>Ngày cấp: ..16/07/1974......</span><span>Nơi cấp:..Hà Nội..................</span></h2>
+            <h2>Hộ khẩu thường trú: ..Xã Ngọc Hiệp, Huyện Quốc Oai, Thành phố Hà Nội.............<br>............................................................................................................................................</h2>
+             <h2>Chỗ ở hiện tại:....Láng Hạ, Hà Đông, Hà Nội................................................................ <br> ............................................................................................................................................</h2>
+             <h2 ><span>Tôi viết đơn này mong Ban Công An cho tôi công tác tại đây một thời gian</span>.............<br>...........................................................................................................................................</h2>
+             <h2>Thời gian cư trú:..20/10/2020.......đến:..20/10/2022.......................................................</h2>
+             <h2 class="camon">Tôi xin chân thành cảm ơn!</h2>
+        </div>
+        <div class="end">
+            <div class="xnca"><h2>Xác nhận của Công An</h2>
+                <p >(ký ghi rõ ,họ tên , chức vụ và đóng dấu)</p>
+                <p >Dũng</p>
+                <h2 >Bùi Quốc Dũng</h2>
+            </div>
+            <div class="nld">
+                <p >Ngày.20..tháng.10..năm.2020...</p>
+                <br>
+                <h2>Người làm đơn</h2>
+                <p >(Ký, ghi rõ họ tên)</p>
+                <h2 >Duy</h2>
+                <h2 >Vũ Đức Duy</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

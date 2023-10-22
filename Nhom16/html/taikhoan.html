@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/baitaplon.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/offcanvas-navbar/">
+        <link rel="stylesheet" href="dangky.html">
+        <link rel="stylesheet" href="dangnhap.html">
+        <link rel="stylesheet" href="khac1.html">
+        <link rel="stylesheet" href="khac2.html">
+        <link rel="stylesheet" href="khac3.html">
+        <title>Quản lí hộ khẩu</title>
+        <script src="../javascript/java.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <div class="first">
+                <img src="../baitaplon/huy.png" >
+            <p>
+                Cổng thông tin quốc gia về <br>
+                quản lí hộ khẩu dân cư
+            </p>
+            
+        </div>  
+      <div >
+        
+          <li >
+            <a  href="dangnhap.html"  ">Sign Up </a>
+          </li>
+          <li >
+            <a  href="dangky.html" "> Log in </a>
+          </li>
+        
+        
+        
+      </div>
+    </div>
+   
+    <div class="instruction " >
+        <nav>
+            <ul>
+                <li>
+                  <a class="dropbtn"  href="baitaplon.html" onclick="an('tt') ;hien('container1');an('cuoi')"><i class="fa fa-fw fa-home"></i> Home</a> 
+                </li>
+                
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="ttch.html" onclick="hien('tt'); hien('ttch');an('tttv1');an('tttv2');an('tttv3');an('ttch1');an('container1')">Hồ sơ cá nhân</a>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" onclick="hien('tt');hien('ttch');an('ttch1');an('tttv1');an('tttv2');an('tttv3');an('container1')" href="ttch.html">Tra cứu thông tin</a>
+                    <div class="dropdown-content">
+                      <a href="ttch.html" onclick="hien('ttch');hien('ttch1');an('tttv3');an('tttv1');an('tttv2');hien('tt');an('container1')">Thông tin chủ hộ</a>
+                      <a href="tttv.html" onclick="click0('tttv1');an('ttch');hien('ttch1');an('tttv2');an('tttv3');hien('tt');an('container1')">Thông tin thành viên</a>
+                      <!-- <a href="#">Các thành viên khác</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn">Xuất trình giấy tờ</a>
+                    <div class="dropdown-content">
+                      <a href="#">Giấy khai sinh</a>
+                      <a href="#">Giấy kết hôn</a>
+                      <a href="#">Giấy chứng nhận tạm trú</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="khac1.html">Khác</a>
+                    <div class="dropdown-content">
+                      <a href="khac1.html">Điều khoản & dịch vụ</a>
+                      <!-- <a href="#">Hotline hỗ trợ</a> -->
+                      <a href="khac2.html">Ý kiến phản hồi</a>
+                      <a href="khac3">Xin cấp giấy tờ</a>
+                    </div>
+                  </li>
+                  <li class="dropdown search-container" >
+                    <a  class="dropbtn" href="taikhoan.html" onclick="an('container1');hien('cuoi')" ><i class="fa fa-fw fa-user"></i> </a>
+                    <div class="dropdown-content dropdown-content1">
+                      <a href="#tttk">Thông tin tài khoản</a>
+                      <a href="#mk">Cài đặt & Quyền Riêng Tư</a>
+                      <a href="#nk">Quản lý thiết bị</a>
+                      <a href="dangnhap.html" onclick="alert2()">Đăng xuất</a>
+                    </div>
+                  </li>
+                  <form >
+                  <li class="dropdown search-container">
+                    <a class="dropbtn " href="#search" onclick="click0('searchan'),viet()"><i class="fa fa-fw fa-search"></i> Search</a> 
+                  </li>
+                </form>
+            </ul>
+        </nav> 
+    </div>
+    <div class="hoso "  >
+      <div class="w3-content learntocodecontent" > 
+        
+        <form class="example"  >
+          <input type="text" placeholder="Search here..." id="search"  autocomplete="off"   >
+          <i class="fa fa-fw fa-search" onclick="alert1()" ></i>
+        </form>  
+        <h3 id="searchan"  > 
+         
+        </h3>
+      </div>
+    </div>
+    <div id="cuoi">
+        <div id="tk">
+          <div class="bt">
+            <div class="bt1">
+              <h1>
+                Cài đặt
+              </h1>
+            </div>
+            <div class="bt2">
+              <h3>Trung tâm tài khoản</h4>
+              <h4>Quản lý phần cài đặt tài khoản và trải nghiệm kết với các công nghệ trên nền tảng .</h4>
+              <h4><a href="#tttk">Thông tin tài khoản</a></h4>
+              <hr>
+              <h4><a href="#mk">Quản lí mật khẩu</a></h4>
+              <hr>
+              <h4><a href="#bm">Kiểm tra bảo mật</a></h4>
+              <hr>
+              <h4><a href="#nk">Quản lí thiết bị</a></h4>
+              <hr>
+              <!-- <h4>Tùy chọn riêng tư</h4> -->
+            </div>
+          </div>
+          <div class="bp">
+            <div id="tttk">
+              <div class="bp1">
+                <!-- <h2>Tài khoản</h2> -->
+                <p>Thông tin này để xác minh danh tính và của riêng bạn.Hãy đảm bảo rằng nó có tính bảo mật để tránh các rủi ro từ bên thứ ba . Vui lòng hạn chế chia sẻ thông tin cá nhân của bạn cho bên thứ ba.</p>
+                <h3>Thông tin tài khoản</h3>
+              </div>
+              <div class="bp2">
+                  <div class="bp3">
+                    <h4>Thông tin liên kết</h5>
+                    <h5  >nguyenthanhminh22@gmail.com, +0823465232</h6>
+                  </div>
+                  <hr>
+                  <div class="bp3">
+                    <h4>Tài khoản đăng nhập</h4>
+                    <h5>001236987532</h5>
+                  </div>
+                  <hr>
+                  <div class="bp3">
+                    <h4 >Xác nhận danh tính</h4>
+                  </div>
+                  <hr>
+                  <div class="bp3">
+                    <h4>Quyền sở hữu và kiểm soát tài khoản</h4>
+                  </div>
+                  
+              </div>
+            </div>
+            <div id="mk">
+              <div class="bp1">
+                <!-- <h2>Tài khoản</h2> -->
+                <h3>Quản lí mật khẩu</h3>
+                <h5>Quản lý mật khẩu, tùy chọn đăng nhập và phương thức khôi phục.</h5>
+              </div>
+              <div class="bp2">
+                <div class="bp3">
+                  <h4>Đổi mật khẩu</h5>
+                  <!-- <h5  >nguyenthanhminh22@gmail.com, +0823465232</h6> -->
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4>Xác thực 2 yếu tố</h4>
+                  <!-- <h5>001236987532</h5> -->
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4 >Thông tin đăng nhập đã lưu</h4>
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4>Quyền sở hữu và kiểm soát tài khoản</h4>
+                </div>
+                
+            </div>
+            </div>
+            <div id="bm">
+              <div class="bp1">
+                <!-- <h2>Tài khoản</h2> -->
+                <h3>Kiểm tra bảo mật</h3>
+                <h5>Xem xét các vấn đề bảo mật bằng cách chạy quy trình kiểm tra trên các ứng dụng, thiết bị và email đã gửi.</h5>
+              </div>
+              <div class="bp2">
+                <div class="bp3">
+                  <h4>Nơi bạn đăng nhập</h5>
+                  <!-- <h5  >nguyenthanhminh22@gmail.com, +0823465232</h6> -->
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4>Cảnh báo đăng nhập</h4>
+                  <!-- <h5>001236987532</h5> -->
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4 >Email gần đây</h4>
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4>Kiểm tra bảo mật</h4>
+                </div>
+                
+            </div>
+            </div>
+            <div id="nk">
+              <div class="bp1">
+                <!-- <h2>Tài khoản</h2> -->
+                <h3>Hoạt động của bạn</h3>
+                <h5>Xem và quản lí thông tin của bạn cũng như một số cài đặt.</h5>
+              </div>
+              <div class="bp2">
+                <div class="bp3">
+                  <h4>Thiết bị đang sử dụng</h5>
+                  <!-- <h5  >nguyenthanhminh22@gmail.com, +0823465232</h6> -->
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4>Lịch sử đăng nhập</h4>
+                  <!-- <h5>001236987532</h5> -->
+                </div>
+                <hr>
+                <div class="bp3">
+                  <h4 >Hoạt động gần đây</h4>
+                </div>
+                <!-- <hr>
+                <div class="bp3">
+                  <h4>Kiểm tra bảo mật</h4>
+                </div> -->
+                
+            </div>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+</body>
+</html>

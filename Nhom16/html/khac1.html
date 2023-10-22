@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/khac.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/offcanvas-navbar/">
+        <link rel="stylesheet" href="dangky.html">
+        <link rel="stylesheet" href="dangnhap.html">
+        <title>Quản lí hộ khẩu</title>
+        <script src="../javascript/java.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+        
+    </head>
+    
+    <body>
+      
+      <div class="menu">
+        <div class="first">
+                <img src="../baitaplon/huy.png" >
+            <p>
+                Cổng thông tin quốc gia về <br>
+                quản lí hộ khẩu dân cư
+            </p>
+            
+        </div>  
+      <div >
+        
+          <li >
+            <a  href="dangnhap.html"  ">Sign Up </a>
+          </li>
+          <li >
+            <a  href="dangky.html" "> Log in </a>
+          </li>
+        
+        
+        
+      </div>
+    </div>
+   
+    <div class="instruction " >
+        <nav>
+            <ul>
+                <li>
+                  <a class="dropbtn"  href="baitaplon.html" onclick="an('tt') ;hien('container1');an('cuoi')"><i class="fa fa-fw fa-home"></i> Home</a> 
+                </li>
+                
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="ttch.html" onclick="hien('tt'); hien('ttch');an('tttv1');an('tttv2');an('tttv3');an('ttch1');an('container1')">Hồ sơ cá nhân</a>
+                    <!-- cần bổ sung giao diện kéo xuống thông tin cá nhân -->
+                    <div class="dropdown-content">
+                      <!-- <a href="#ttch" onclick="hien('tt')">Thông tin cá nhân</a> -->
+                      <!-- <a href="#">Xuất trình giấy tờ</a> -->
+                      <!-- <a href="#tttv1" onclick="myFunctionSearch1">Quản lí thành viên</a> -->
+                      <!-- <a href="#">Chỉnh sửa thông tin</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" onclick="hien('tt');hien('ttch');an('ttch1');an('tttv1');an('tttv2');an('tttv3');an('container1')" href="ttch.html">Tra cứu thông tin</a>
+                    <div class="dropdown-content">
+                      <a href="ttch.html" onclick="hien('ttch');hien('ttch1');an('tttv3');an('tttv1');an('tttv2');hien('tt');an('container1')">Thông tin chủ hộ</a>
+                      <a href="tttv.html" onclick="click0('tttv1');an('ttch');hien('ttch1');an('tttv2');an('tttv3');hien('tt');an('container1')">Thông tin thành viên</a>
+                      <!-- <a href="#">Các thành viên khác</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn">Xuất trình giấy tờ</a>
+                    <div class="dropdown-content">
+                      <a href="giaykhaisinh.html">Giấy khai sinh</a>
+                      <a href="kethon.html">Giấy kết hôn</a>
+                      <a href="tamtru.html">Giấy chứng nhận tạm trú</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn">Khác</a>
+                    <div class="dropdown-content">
+                      <a href="khac1.html">Điều khoản & dịch vụ</a>
+                      <!-- <a href="#">Hotline hỗ trợ</a> -->
+                      <a href="khac2.html">Ý kiến phản hồi</a>
+                      <a href="khac3.html">Xin cấp giấy tờ</a>
+                    </div>
+                  </li>
+                  <li class="dropdown search-container" >
+                    <a  class="dropbtn" href="taikhoan.html" onclick="an('container1');hien('cuoi')" ><i class="fa fa-fw fa-user"></i> </a>
+                    <div class="dropdown-content dropdown-content1">
+                      <a href="taikhoan.html#tttk">Thông tin tài khoản</a>
+                      <a href="taikhoan.html#mk">Cài đặt & Quyền Riêng Tư</a>
+                      <a href="taikhoan.html#nk">Quản lý thiết bị</a>
+                      <a href="dangnhap.html" onclick="alert2()">Đăng xuất</a>
+                    </div>
+                  </li>
+                  <form >
+                  <li class="dropdown search-container">
+                    <a class="dropbtn " href="#search" onclick="click0('searchan'),viet()"><i class="fa fa-fw fa-search"></i> Search</a> 
+                  </li>
+                </form>
+            </ul>
+        </nav> 
+    </div>
+        <!-- <div class="hoso "  >
+            <div class="w3-content learntocodecontent" > 
+              
+              <form class="example"  >
+                <input type="text" placeholder="Search here..." id="search"  autocomplete="off"   >
+                <i class="fa fa-fw fa-search" onclick="alert1()" ></i>
+              </form>  
+              <h3 id="searchan"  > 
+               
+              </h3>
+            </div>
+          </div> -->
+      <div class="khac" >
+        <!-- dien kkhoan -->
+        <div class="dk"id="khac1" >
+          <h1 class="dk">
+            Điều khoản và điều kiện sử dụng Cổng Dịch vụ Thông tin Quốc gia
+          </h1>
+          <p class="dk">Bằng việc sử dụng các Dịch vụ trên Cổng Dịch vụ thông tin Quốc gia, tổ chức, cá nhân sử dụng mặc nhiên chấp thuận và cam kết thực hiện các điều khoản và điều kiện sử dụng sau đây:</p>
+          <hr>
+          <h3>1. Tổ chức, cá nhân sử dụng Dịch vụ trên cổng Dịch vụ thông tin quốc gia có trách nhiệm:</h3>
+          <ul>
+            <li>Chịu trách nhiệm trước pháp luật về những thông tin kê khai, đăng ký tài khoản trên Cổng Dịch vụ công Quốc gia, chỉ sử dụng Cổng Dịch vụ công Quốc gia cho các mục đích hợp pháp và phải chịu trách nhiệm về mọi hoạt động được thực hiện bằng tài khoản của mình.</li>
+            <li>Chịu trách nhiệm giữ bí mật thông tin tài khoản, mật khẩu của mình, trường hợp mật khẩu bị mất hoặc bị đánh cắp hoặc phát hiện có người sử dụng trái phép tài khoản của mình, phải thông báo kịp thời cho Cơ quan quản lý và vận hành hệ thống.</li>
+            <li>Chịu trách nhiệm đối với tất cả các nội dung do mình gửi, đăng ký, cung cấp khi sử dụng dịch vụ công và các tiện ích khác trên Cổng Dịch vụ công Quốc gia và phải có trách nhiệm đối với các bên có liên quan khác.</li>
+            <li>Mọi trường hợp sử dụng lại các thông tin, nội dung trên Cổng Dịch vụ công Quốc gia để đăng tải trên các phương tiện truyền thông phải thực hiện theo quy định của pháp luật.</li>
+            <li>Đồng ý chia sẻ thông tin đăng ký trên Cổng Dịch vụ công Quốc gia theo quy định của Cổng Dịch vụ công Quốc gia.</li>
+          </ul>
+          <hr>
+          <h3>2. Tổ chức, cá nhân sử dụng Dịch vụ trên cổng Dịch vụ thông tin quốc gia không được thực hiện một trong các hành vi sau:</h3>
+          <ul>
+            <li>Quấy rối, gây phiền toái, gây bất tiện, hạn chế, ngăn chặn hoặc các hành vi vi phạm pháp luật khác vi phạm các quyền, lợi ích hợp pháp của tổ chức, cá nhân khác trong việc sử dụng Cổng Dịch vụ công Quốc gia;</li>
+            <li>Đăng hoặc truyền qua Cổng Dịch vụ công Quốc gia bất kỳ tài liệu có nội dung xuyên tạc, phỉ báng, khiêu dâm, xúc phạm hoặc gây dư luận xấu, làm giảm uy tín của tổ chức cá nhân khác hoặc tài liệu, thông tin khác trái với các quy định của pháp luật;</li>
+            <li>Cản trở hoặc ngăn chặn trái phép quá trình truyền, gửi, nhận thông điệp dữ liệu.</li>
+            <li>Thay đổi, xóa, hủy, giả mạo, sao chép, tiết lộ, hiển thị, di chuyển trái phép một phần hoặc toàn bộ thông điệp dữ liệu.</li>
+            <li>Tạo ra thông điệp dữ liệu nhằm thực hiện hành vi trái pháp luật.</li>
+            <li>Tạo ra hoặc phát tán chương trình tin học gây hại, tự ý xóa, làm tổn hại hoặc thay đổi phần mềm, dữ liệu điện tử, xâm nhập trái phép, can thiệp vào chức năng hoạt động của Cổng hoặc có hành vi khác nhằm phá hoại hạ tầng công nghệ phục vụ cung cấp dịch vụ công trực tuyến.</li>
+            
+            <li>Gian lận, chiếm đoạt hoặc sử dụng trái phép chữ ký điện tử của người khác; sửa chữa, thay đổi hoặc công khai hóa thông tin riêng hợp pháp của cơ quan, tổ chức, cá nhân trên Cổng mà không được phép của chủ sở hữu thông tin đó;</li>
+            <li>Các hành vi khác theo quy định của pháp luật.</li>
+          </ul>
+          <hr>
+          <h3>3. Cổng Dịch vụ thông tin quốc gia có quyền Tạm dừng, Khoá, Huỷ các tài khoản trên cổng có các hành vi vi phạm pháp luật, gian lận hoặc không tuân thủ các điều khoản sử dụng đã nêu ở trên mà không cần thông báo cũng như bồi thường</h3>
+          <hr>
+          <h3>4. Cổng Dịch vụ thông tin Quốc gia không chia sẻ thông tin về người sử dụng với các cơ quan khác mà không có sự cho phép của người sử dụng, trừ các trường hợp:
+          </h3>
+
+          <ul><li>
+            Việc cung cấp là cần thiết để giải quyết một thủ tục hành chính, dịch vụ công theo yêu cầu của người sử dụng;
+          </li>
+          <li>
+            Việc cung cấp thông tin trong trường hợp cần thiết vì lợi ích công cộng, sức khỏe của cộng đồng theo quy định của luật có liên quan.
+          </li></ul>
+          <hr>
+          <h3>5. Trong trường hợp sửa đổi nội dung các điều khoản và điều kiện sử dụng Cổng Dịch vụ thông tin Quốc gia, các nội dung sửa đổi sẽ được thông báo trên Cổng. Người sử dụng tiếp tục sử dụng và tiếp tục thực hiện các yêu cầu dịch vụ trên Cổng có nghĩa là đã chấp nhận các sửa đổi đó.</h3>
+        </div>
+        <!-- /phan anh kien nghi -->
+  
+
+
+        </div>
+      </div>
+  
+</body>
+</html>

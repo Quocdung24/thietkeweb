@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/tttv.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/offcanvas-navbar/">
+        <link rel="stylesheet" href="dangky.html">
+        <link rel="stylesheet" href="dangnhap.html">
+        <link rel="stylesheet" href="khac1.html">
+        <link rel="stylesheet" href="khac2.html">
+        <link rel="stylesheet" href="khac3.html">
+        <title>Quản lí hộ khẩu</title>
+        <script src="../javascript/java.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+        
+    </head>
+    <body>
+      <div class="menu">
+        <div class="first">
+                <img src="../baitaplon/huy.png" >
+            <p>
+                Cổng thông tin quốc gia về <br>
+                quản lí hộ khẩu dân cư
+            </p>
+            
+        </div>  
+      <div >
+        
+          <li >
+            <a  href="dangnhap.html"  ">Sign Up </a>
+          </li>
+          <li >
+            <a  href="dangky.html" "> Log in </a>
+          </li>
+        
+        
+        
+      </div>
+    </div>
+   
+    <div class="instruction " >
+        <nav>
+            <ul>
+                <li>
+                  <a class="dropbtn"  href="baitaplon.html" onclick="an('tt') ;hien('container1');an('cuoi')"><i class="fa fa-fw fa-home"></i> Home</a> 
+                </li>
+                
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="ttch.html" onclick="hien('tt'); hien('ttch');an('tttv1');an('tttv2');an('tttv3');an('ttch1');an('container1')">Hồ sơ cá nhân</a>
+                    <!-- cần bổ sung giao diện kéo xuống thông tin cá nhân -->
+                    <div class="dropdown-content">
+                      <!-- <a href="#ttch" onclick="hien('tt')">Thông tin cá nhân</a> -->
+                      <!-- <a href="#">Xuất trình giấy tờ</a> -->
+                      <!-- <a href="#tttv1" onclick="myFunctionSearch1">Quản lí thành viên</a> -->
+                      <!-- <a href="#">Chỉnh sửa thông tin</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" onclick="hien('tt');hien('ttch');an('ttch1');an('tttv1');an('tttv2');an('tttv3');an('container1')" href="ttch.html">Tra cứu thông tin</a>
+                    <div class="dropdown-content">
+                      <a href="ttch.html" onclick="hien('ttch');hien('ttch1');an('tttv3');an('tttv1');an('tttv2');hien('tt');an('container1')">Thông tin chủ hộ</a>
+                      <a href="tttv.html" onclick="click0('tttv1');an('ttch');hien('ttch1');an('tttv2');an('tttv3');hien('tt');an('container1')">Thông tin thành viên</a>
+                      <!-- <a href="#">Các thành viên khác</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn">Xuất trình giấy tờ</a>
+                    <div class="dropdown-content">
+                      <a href="giaykhaisinh.html">Giấy khai sinh</a>
+                      <a href="kethon.html">Giấy kết hôn</a>
+                      <a href="tamtru.html">Giấy chứng nhận tạm trú</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="khac1.html">Khác</a>
+                    <div class="dropdown-content">
+                      <a href="khac1.html">Điều khoản & dịch vụ</a>
+                      <!-- <a href="#">Hotline hỗ trợ</a> -->
+                      <a href="khac2.html">Ý kiến phản hồi</a>
+                      <a href="khac3.html">Xin cấp giấy tờ</a>
+                    </div>
+                  </li>
+                  <li class="dropdown search-container" >
+                    <a  class="dropbtn" href="taikhoan.html" onclick="an('container1');hien('cuoi')" ><i class="fa fa-fw fa-user"></i> </a>
+                    <div class="dropdown-content dropdown-content1">
+                      <a href="taikhoan.html#tttk">Thông tin tài khoản</a>
+                      <a href="taikhoan.html#mk">Cài đặt & Quyền Riêng Tư</a>
+                      <a href="taikhoan.html#nk">Quản lý thiết bị</a>
+                      <a href="dangnhap.html" onclick="alert2()">Đăng xuất</a>
+                    </div>
+                  </li>
+                  <form >
+                  <li class="dropdown search-container">
+                    <a class="dropbtn " href="#search" onclick="click0('searchan'),viet()"><i class="fa fa-fw fa-search"></i> Search</a> 
+                  </li>
+                </form>
+            </ul>
+        </nav> 
+    </div>
+    <div class="hoso "  >
+      <div class="w3-content learntocodecontent" > 
+        
+        <form class="example"  >
+          <input type="text" placeholder="Search here..." id="search"  autocomplete="off"   >
+          <i class="fa fa-fw fa-search" onclick="alert1()" ></i>
+        </form>  
+        <h3 id="searchan"  > 
+         
+        </h3>
+      </div>
+    </div>
+        <div id="tt">
+            <div class="ttch">
+              <a class="accordion" onclick="click1('ttch');an('tttv3');an('tttv2');hien('ttch');an('tttv1');hien('tttv')" id="ttch1" >Chủ Hộ </a>
+              <div id="ttch">
+                <h2 >
+                  Thông tin cá nhân
+                </h2>
+                <img src="../baitaplon/Avatar-trang-den.png" alt="Avatar" class="tavatar">
+                <div >
+                  <div >
+                    <p>Họ và tên</p>
+                    <p>NGUYỄN THANH MINH</p>
+                  </div>
+                  <hr>
+                  <div class="a">
+                    <p>Số định danh cá nhân</p>
+                    <div class="a">
+                      <p class="b">001236987532</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Giới tính</p>
+                    <p>Nam</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Ngày sinh</p>
+                    <p>16-07-1974</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Dân tộc</p>
+                    <p>Kinh</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Tôn giáo</p>
+                    <p>Không</p>
+                  </div>
+                  <hr>
+                  <div class="a">
+                    <p>Số điện thoại</p>
+                    <div class="a">
+                      <p class="c">0823465232</p>
+                     
+                    </div>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Quê Quán</p>
+                    <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Quan hệ chủ hộ</p>
+                    <p>Chủ Hộ</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p >Nơi thường trú</p>
+                    <p >Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Nơi tạm trú</p>
+                    <!-- <p>Xã Yên Thái, Huyện Thanh Trì, Hà Nội</p> -->
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Nơi ở hiện tại</p>
+                    <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="tttv" >
+              <a class="accordion" onclick="an('ttch');click0('tttv1');an('tttv2');an('tttv3');hien('ttch1');" id="tttv">Các thành viên khác (1)</a>
+              <div  id="tttv1" >
+                <h2 >
+                  Thông tin cá nhân
+                </h2>
+                <img src="../baitaplon/Avatar-trang-den.png" alt="Avatar" class="tavatar">
+                <div >
+                  <div >
+                    <p>Họ và tên</p>
+                    <p>PHẠM MỸ LINH</p>
+                  </div>
+                  <hr>
+                  <div class="a">
+                    <p>Số định danh cá nhân</p>
+                    <div class="a">
+                      <p class="b">001216458762</p>
+                      
+                    </div>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Giới tính</p>
+                    <p>Nữ</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Ngày sinh</p>
+                    <p>11-08-1980</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Dân tộc</p>
+                    <p>Kinh</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Tôn giáo</p>
+                    <p>Không</p>
+                  </div>
+                  <hr>
+                  <div class="a">
+                    <p>Số điện thoại</p>
+                    <div class="a">
+                      <p class="c">0829645882</p>
+                      
+                    </div>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Quê Quán</p>
+                    <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Quan hệ chủ hộ</p>
+                    <p>Vợ Chồng</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p >Nơi thường trú</p>
+                    <p >Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Nơi tạm trú</p>
+                    <!-- <p>Xã Yên Thái, Huyện Thanh Trì, Hà Nội</p> -->
+                  </div>
+                  <hr>
+                  <div>
+                    <p>Nơi ở hiện tại</p>
+                    <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                  </div>
+                  
+                </div>
+              </div>
+          </div>
+          <div class="tttv" >
+            <a class="accordion" onclick="an('ttch');hien('ttch1');click0('tttv2');an('tttv1');an('tttv3');">Các thành viên khác (2)</a>
+            <div id="tttv2">
+              <h2 >
+                Thông tin cá nhân
+              </h2>
+              <img src="../baitaplon/Avatar-trang-den.png" alt="Avatar" class="tavatar">
+              <div >
+                <div >
+                  <p>Họ và tên</p>
+                  <p>NGUYỄN THANH MINH</p>
+                </div>
+                <hr>
+                <div class="a">
+                  <p>Số định danh cá nhân</p>
+                  <div class="a">
+                    <p class="b">001163236214</p>
+                    
+                  </div>
+                </div>
+                <hr>
+                <div>
+                  <p>Giới tính</p>
+                  <p>Nữ</p>
+                </div>
+                <hr>
+                <div>
+                  <p>Ngày sinh</p>
+                  <p>16-07-2004</p>
+                </div>
+                <hr>
+                <div>
+                  <p>Dân tộc</p>
+                  <p>Kinh</p>
+                </div>
+                <hr>
+                <div>
+                  <p>Tôn giáo</p>
+                  <p>Không</p>
+                </div>
+                <hr>
+                <div class="a">
+                  <p>Số điện thoại</p>
+                  <div class="a">
+                    <p class="c">0365237432</p>
+                    
+                  </div>
+                </div>
+                <hr>
+                <div>
+                  <p>Quê Quán</p>
+                  <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                </div>
+                <hr>
+                <div>
+                  <p>Quan hệ chủ hộ</p>
+                  <p>Con Cái</p>
+                </div>
+                <hr>
+                <div>
+                  <p >Nơi thường trú</p>
+                  <p >Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                </div>
+                <hr>
+                <div>
+                  <p>Nơi tạm trú</p>
+                  <!-- <p>Xã Yên Thái, Huyện Thanh Trì, Hà Nội</p> -->
+                </div>
+                <hr>
+                <div>
+                  <p>Nơi ở hiện tại</p>
+                  <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="tttv" >
+            <a class="accordion" onclick="an('ttch');hien('ttch1');click0('tttv3');an('tttv1');an('tttv2');">Các thành viên khác (3)</a>
+            <div id="tttv3">
+             
+            <h2 >
+              Thông tin cá nhân
+            </h2>
+            <img src="../baitaplon/Avatar-trang-den.png" alt="Avatar" class="tavatar">
+            <div >
+              <div >
+                <p>Họ và tên</p>
+                <p>NGUYỄN ÁNH NGUYỆT</p>
+              </div>
+              <hr>
+              <div class="a">
+                <p>Số định danh cá nhân</p>
+                <div class="a">
+                  <p class="b">001123232322</p>
+                  
+                </div>
+              </div>
+              <hr>
+              <div>
+                <p>Giới tính</p>
+                <p>Nữ</p>
+              </div>
+              <hr>
+              <div>
+                <p>Ngày sinh</p>
+                <p>19-12-2009</p>
+              </div>
+              <hr>
+              <div>
+                <p>Dân tộc</p>
+                <p>Kinh</p>
+              </div>
+              <hr>
+              <div>
+                <p>Tôn giáo</p>
+                <p>Không</p>
+              </div>
+              <hr>
+              <div class="a">
+                <p>Số điện thoại</p>
+                <div class="a">
+                  <p class="c">0762355232</p>
+                  
+                </div>
+              </div>
+              <hr>
+              <div>
+                <p>Quê Quán</p>
+                <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+              </div>
+              <hr>
+              <div>
+                <p>Quan hệ chủ hộ</p>
+                <p>Con Cái</p>
+              </div>
+              <hr>
+              <div>
+                <p >Nơi thường trú</p>
+                <p >Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+              </div>
+              <hr>
+              <div>
+                <p>Nơi tạm trú</p>
+                <!-- <p>Xã Yên Thái, Huyện Thanh Trì, Hà Nội</p> -->
+              </div>
+              <hr>
+              <div>
+                <p>Nơi ở hiện tại</p>
+                <p>Xã Ngọc Liệp, Huyện Quốc Oai, Hà Nội</p>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+          </div>
+    </body>
+
+</html>

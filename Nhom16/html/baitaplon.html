@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/baitaplon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="dangky.html">
+    <link rel="stylesheet" href="dangnhap.html">
+    <link rel="stylesheet" href="khac1.html">
+    <link rel="stylesheet" href="khac2.html">
+    <link rel="stylesheet" href="khac3.html">
+    <link rel="stylesheet" href="ttch.html">
+    <link rel="stylesheet" href="tttv.html">
+    <link rel="stylesheet" href="taikhoan.html">
+    <link rel="stylesheet" href="baitaplon.html">
+    <link rel="stylesheet" href="kethon.html">
+    <link rel="stylesheet" href="tamtru.html">
+    <link rel="stylesheet" href="giaykhaisinh.html">
+    <title>Quản lí hộ khẩu</title>
+    <script src="../javascript/java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    
+</head>
+
+<body>
+  
+    <div class="menu">
+        <div class="first">
+                <img src="../baitaplon/huy.png" >
+            <p>
+                Cổng thông tin quốc gia về <br>
+                quản lí hộ khẩu dân cư
+            </p>
+            
+        </div>  
+      <div >
+        
+          <li >
+            <a  href="dangnhap.html"  ">Sign Up </a>
+          </li>
+          <li >
+            <a  href="dangky.html" "> Log in </a>
+          </li>
+        
+        
+        
+      </div>
+    </div>
+   
+    <div class="instruction " >
+        <nav>
+            <ul>
+                <li>
+                  <a class="dropbtn"  href="baitaplon.html" onclick="an('tt') ;hien('container1');an('cuoi')"><i class="fa fa-fw fa-home"></i> Home</a> 
+                </li>
+                
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="ttch.html" onclick="hien('tt'); hien('ttch');an('tttv1');an('tttv2');an('tttv3');an('ttch1');an('container1')">Hồ sơ cá nhân</a>
+                    <!-- cần bổ sung giao diện kéo xuống thông tin cá nhân -->
+                    <div class="dropdown-content">
+                      <!-- <a href="#ttch" onclick="hien('tt')">Thông tin cá nhân</a> -->
+                      <!-- <a href="#">Xuất trình giấy tờ</a> -->
+                      <!-- <a href="#tttv1" onclick="myFunctionSearch1">Quản lí thành viên</a> -->
+                      <!-- <a href="#">Chỉnh sửa thông tin</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" onclick="hien('tt');hien('ttch');an('ttch1');an('tttv1');an('tttv2');an('tttv3');an('container1')" href="ttch.html">Tra cứu thông tin</a>
+                    <div class="dropdown-content">
+                      <a href="ttch.html" onclick="hien('ttch');hien('ttch1');an('tttv3');an('tttv1');an('tttv2');hien('tt');an('container1')">Thông tin chủ hộ</a>
+                      <a href="tttv.html" onclick="click0('tttv1');an('ttch');hien('ttch1');an('tttv2');an('tttv3');hien('tt');an('container1')">Thông tin thành viên</a>
+                      <!-- <a href="#">Các thành viên khác</a> -->
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn">Xuất trình giấy tờ</a>
+                    <div class="dropdown-content">
+                      <a href="giaykhaisinh.html">Giấy khai sinh</a>
+                      <a href="kethon.html">Giấy kết hôn</a>
+                      <a href="tamtru.html">Giấy chứng nhận tạm trú</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a  class="dropbtn" href="khac1.html">Khác</a>
+                    <div class="dropdown-content">
+                      <a href="khac1.html">Điều khoản & dịch vụ</a>
+                      <!-- <a href="#">Hotline hỗ trợ</a> -->
+                      <a href="khac2.html">Ý kiến phản hồi</a>
+                      <a href="khac3.html">Xin cấp giấy tờ</a>
+                    </div>
+                  </li>
+                  <li class="dropdown search-container" >
+                    <a  class="dropbtn" href="taikhoan.html" onclick="an('container1');hien('cuoi')" ><i class="fa fa-fw fa-user"></i> </a>
+                    <div class="dropdown-content dropdown-content1">
+                      <a href="taikhoan.html#tttk">Thông tin tài khoản</a>
+                      <a href="taikhoan.html#mk">Cài đặt & Quyền Riêng Tư</a>
+                      <a href="taikhoan.html#nk">Quản lý thiết bị</a>
+                      <a href="dangnhap.html" onclick="alert2()">Đăng xuất</a>
+                    </div>
+                  </li>
+                  <form >
+                  <li class="dropdown search-container">
+                    <a class="dropbtn " href="#search" onclick="click0('searchan'),viet()"><i class="fa fa-fw fa-search"></i> Search</a> 
+                  </li>
+                </form>
+            </ul>
+        </nav> 
+    </div>
+    <div class="hoso "  >
+      <div class="w3-content learntocodecontent" > 
+        
+        <form class="example"  >
+          <input type="text" placeholder="Search here..." id="search"  autocomplete="off"   >
+          <i class="fa fa-fw fa-search" onclick="alert1()" ></i>
+        </form>  
+        <h3 id="searchan"  > 
+         
+        </h3>
+      </div>
+    </div>
+
+
+    <main class="container" id="container1">
+      <div class="thome1">
+        
+
+            <div class="mySlides fade" >
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <img src="../baitaplon/bg-news.jpg"  >
+              <div class="text"><h1 >Chính thức bỏ sổ hộ khẩu, sổ tạm trú kể từ hôm nay, 1/1/2023</h1>
+                <p >Từ ngày 1/1/2023 sẽ chính thức bỏ sổ hộ khẩu giấy theo quy định tại Luật Cư trú năm 2020. Vậy người dân cần lưu ý và chuẩn bị các giấy tờ thay thế như nào để quá trình thực hiện các thủ tục hành chính có sử dụng sổ hộ khẩu được thuận lợi và nhanh chóng...</p>
+                <p ><a href="https://ebh.vn/tin-tuc/bo-so-ho-khau-giay" >Continue reading...</a></p>
+            </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">2 / 3</div> -->
+              <img src="../baitaplon/anh-t120-1.png" >
+              <div class="text"><h1 >Chuyển đổi số các loại giấy tờ truyền thống</h1>
+                <!-- <p >Thay thế các loại giấy tờ truyền thống thông thường ,vừa phức tạp vừa kém hiệu quả.
+                </p> -->
+                <p>Ủy ban nhân dân cấp tỉnh chỉ đạo Ủy ban nhân dân cấp huyện, cấp xã thực hiện sắp xếp đơn vị hành chính  triển khai việc chuyển đổi các loại giấy tờ, tạo điều kiện thuận lợi cho cá nhân, tổ chức khi thực hiện các thủ tục chuyển đổi các loại giấy tờ thay đổi địa giới đơn vị hành chính....</p>
+                <p ><a href="https://xaydungchinhsach.chinhphu.vn/chuyen-doi-giay-to-cho-ca-nhan-do-sap-xep-don-vi-hanh-chinh-duoc-thuc-hien-the-nao-119230722065448322.htm" >Continue reading...</a></p>
+            </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img src="../baitaplon/vssidne_800x450.jpg" >
+              <div class="text">
+                <h1 >Ra mắt ứng dụng y tế trực tuyến</h1>
+                <p >VSSID là một ứng dụng tiên tiến, mang đến cho người dùng trải nghiệm tuyệt vời và tiện lợi</p>
+                <p>Ứng dụng VssID giúp người tham gia BHXH, BHYT có thể tiếp cận thông tin, ứng dụng công nghệ vào cải cách thủ tục hành chính của ngành BHXH Việt Nam <br>Hãy cùng khám phá và trải nghiệm những tính năng độc đáo của VSSID ngay hôm nay! ...</p>
+                <p ><a href="https://baohiemxahoi.gov.vn/gioithieu/Pages/tai-ung-dung-vssid.aspx" >Continue reading...</a></p>
+            </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            <br>
+      </div>
+      
+      <br>
+      <div class="align-dot">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+     
+        
+            
+
+      <div class="thome3">
+        <div class="thome4">
+          <div class="thome5" >
+            <div >
+              <h2>Căn cước công dân </h2>
+              <h3 >Ngày 01/7/2021</h3>
+              <p class="thome6">Khi công dân xuất trình căn cước công dân (CCCD) thì cơ quan, tổ chức, cá nhân có thẩm quyền 
+                không được yêu cầu công dân xuất trình thêm giấy tờ khác chứng nhận các thông tin về CCCD...
+              
+              </p>
+              
+            </div>
+            <a href="https://baochinhphu.vn/chinh-thuc-bo-so-ho-khau-so-tam-tru-ke-tu-hom-nay-1-1-2023-102230101102935993.htm" >Continue reading.....</a>
+          </div>
+          <div class="tanh">
+            <img src="../baitaplon/cccd.webp" alt="Có thể có lỗi">
+          </div>
+        </div>
+        <div class="thome4">
+          <div class="thome5" >
+            <div >
+              <h2>Quản lý qua VNeID</h2>
+              <h3 >Quyết định số 34/QĐ-TTG ngày 08/11/2021</h3>
+              <p class="thome6">Sử dụng ứng dụng VNeID hiển thị các thông tin trên các thiết bị điện tử để phục vụ giải quyết các TTHC, 
+                giao dịch dân sự trong ứng dụng VNeID...</p>
+              
+            </div>
+            <a href="https://baochinhphu.vn/chinh-thuc-bo-so-ho-khau-so-tam-tru-ke-tu-hom-nay-1-1-2023-102230101102935993.htm" > Continue reading..... </a>
+          </div>
+          <div class="tanh">
+            <img src="../baitaplon/vneid.jpg" alt="Có thể có lỗi">
+          </div>
+        </div>
+      </div>
+    
+      <div class="thome7">
+        <div class="thome8">
+          <h2 class="thome9">
+            Đổi mới tiến bộ trong khoa học công nghệ chuyển đổi số
+          </h2>
+          <hr>
+          
+    
+          <article class="article1">
+            <div>
+              
+              <h2 class="th2">Tra cứu thông tin cá nhân trực tuyến</h2>
+              <p class="">December 9, 2019 by <a href="https://dichvucong.gov.vn/p/home/dvc-gioi-thieu.html">dichvucong.gov</a></p>
+              <p class="tp">Chúng ta cần tối ưu hóa việc áp dụng công nghệ hiện đại vào quản lý hộ khẩu, nhằm nâng cao hiệu quả công tác, tiết kiệm thời gian và nguồn lực, đồng thời cung cấp dịch vụ nhanh chóng, minh bạch cho người dân...<i onclick="click0('tpanel')">Xem thêm</i></p>
+              
+              <div id="tpanel">
+
+                <p>Bước 1: Công dân truy cập trang web dân cư quốc gia theo địa chỉ: <a href="https://dichvucong.dancuquocgia.gov.vn"><i> https://dichvucong.dancuquocgia.gov.vn.</i></a></p>
+                <p>Bước 2: Đăng nhập tài khoản/ mật khẩu truy cập (sử dụng tài khoản Cổng DVC quốc gia); xác thực nhập mã OTP được hệ thống gửi về điện thoại.</p>
+                <p>Bước 3: Tại trang chủ, truy cập vào chức năng "Thông tin công dân" và nhập các thông tin theo yêu cầu: Họ tên, số định danh cá nhân, ngày sinh, số điện thoại, mã xác nhận. Sau đó, nhấn "Tìm kiếm".</p>
+                <p>Bước 4: Thông tin cơ bản của công dân sẽ hiện thị trên màn hình gồm: (1) Họ, chữ đệm và tên khai sinh; (2) Ngày, tháng, năm sinh; (3) Giới tính; (4) Nơi đăng ký khai sinh; (5) Quê quán; (6) Nơi thường trú; (7) Số định danh cá nhân; (8) Số chứng minh nhân dân.</p>
+                
+              </div>
+              <hr>
+            </div>
+            
+            <h2 class="th2">Sử dụng thiết bị đọc chíp trên thẻ CCCD</h2>
+            <p class="tp ">Công dân, cơ quan, tổ chức sử dụng thiết bị đọc thông tin trong chíp trên thẻ CCCD phục vụ giải quyết thủ tục hành chính, giao dịch dân sự… 
+              <br>
+              <br>
+              Thiết bị này do Trung tâm Dữ liệu quốc gia về dân cư, Cục Cảnh sát quản lý hành chính về trật tự xã hội nghiên cứu kết hợp sản xuất. Hiện nay, công an cấp huyện đã được trang bị và cấp phép sử dụng.</p>
+            <hr>
+              <div>
+              
+                <h2 class="th2">VNeID và ứng dụng chuyển đổi số</h2>
+                <p class="">October 20, 2022 by <a href="https://xaydungchinhsach.chinhphu.vn/khi-nao-nguoi-dan-duoc-su-dung-vneid-thay-cho-cac-loai-giay-to-xe-11923093010293423.htm">Thông tin chính phủ</a></p>
+                <p class="tp">Ứng dụng VNeID, được phát triển bởi Trung tâm dữ liệu quốc gia về dân cư - Bộ Công an Việt Nam, giúp người dân lưu thông dễ dàng và nhanh chóng hơn bằng cách thay thế giấy tờ tùy thân bằng việc khai báo y tế và di chuyển nội địa số hóa....</p>
+                
+                <div id="tpanel">
+  
+                  <p>Bước 1: Công dân truy cập trang web dân cư quốc gia theo địa chỉ: <a href="https://dichvucong.dancuquocgia.gov.vn"><i> https://dichvucong.dancuquocgia.gov.vn.</i></a></p>
+                  <p>Bước 2: Đăng nhập tài khoản/ mật khẩu truy cập (sử dụng tài khoản Cổng DVC quốc gia); xác thực nhập mã OTP được hệ thống gửi về điện thoại.</p>
+                  <p>Bước 3: Tại trang chủ, truy cập vào chức năng "Thông tin công dân" và nhập các thông tin theo yêu cầu: Họ tên, số định danh cá nhân, ngày sinh, số điện thoại, mã xác nhận. Sau đó, nhấn "Tìm kiếm".</p>
+                  <p>Bước 4: Thông tin cơ bản của công dân sẽ hiện thị trên màn hình gồm: (1) Họ, chữ đệm và tên khai sinh; (2) Ngày, tháng, năm sinh; (3) Giới tính; (4) Nơi đăng ký khai sinh; (5) Quê quán; (6) Nơi thường trú; (7) Số định danh cá nhân; (8) Số chứng minh nhân dân.</p>
+                  
+                </div>
+                <hr>
+              </div>
+            <p class="tp1">NHỮNG TIỆN ÍCH NỔI BẬT CỦA ỨNG DỤNG VNeID.</p>
+            <h2 class="tp2">Thay thế giấy tờ truyền thống</h2>
+            <ul>
+              <li>Căn cước công dân</li>
+              <li>Thẻ Bảo hiểm y tế</li>
+              <li>Bảo hiểm xã hội</li>
+              <li>Giấy phép lái xe</li>
+              <li>Giấy đăng kí xe</li>
+              <li>Giấy tờ cư trú</li>
+            </ul>
+            <h3 class="tp2">Khai báo di chuyển trong nước và di biến động dân cư</h3>
+            <p class="to">Nhờ vào ứng dụng VNeID, người dân tại Việt Nam có thể dễ dàng khai báo di chuyển trong nước và khai báo di biến động dân cư nhằm được quét nhanh những mã QR tại những trạm kiểm soát dịch bệnh. Do đó, bạn sẽ tiết kiệm được đáng kể lượng thời gian phải khai báo đồng thời hạn chế tối đa nguy cơ lây lan COVID-19 lẫn nhau.</p>
+            <p class="to">Giờ đây người dân có thể di chuyển khắp nơi mà không cần mang theo quá nhiều loại giấy tờ</p>
+            <p class="to">Dễ dàng kiểm soát và tra cứu thông tin trong mọi tình huống.</p>
+            <h3 class="tp2">Khai báo y tế toàn dân</h3>
+            <p class="to">Ứng dụng VNeID cho phép cho tất cả cư dân tại Việt Nam khai báo y tế tại bất cứ đâu. Điều này giúp cho quá trình truy vết các bệnh nhân F0, F1, F2 dễ hơn và hạn chế sự bùng nổ dịch COVID-19.</p>
+            <h3 class="tp2">Đăng ký thường trú, tạm trú và tạm vắng</h3>
+            <p class="to">Trước đây, việc đăng ký tạm trú, thường trú và tạm vắng đòi hỏi người dân cần phải lên Công an mới làm được. Tuy nhiên, nhờ sự hỗ trợ đắc lực của app VNeID thì bạn hoàn toàn có thể thực hiện ngay tại nhà. Toàn bộ mọi thao tác đều nhanh chóng và cực kỳ dễ dàng.
+            </p>
+            <h3 class="tp2">Tố giác tội phạm</h3>
+            <p class="to">VNeID là một ứng dụng được trực tiếp bộ Công an triển khai và quản lý. Do đó, việc tố giác tội phạm trên phần mềm này được là điều dễ hiểu. Ứng dụng sở hữu đầy đủ các hướng dẫn chi tiết cho người mới và bảo đảm tính tuyệt mật 100% dành cho người tố giác.</p>
+          </article>
+    
+          <article class="">
+            <h2 class="">Số liệu hôm nay</h2>
+            <p class="">December 23, 2023 by <a href="https://sputniknews.vn/20231016/dan-so-viet-nam-2023-thong-ke-hien-nay-bao-nhieu-nguoi-song-tai-quoc-gia-nay-25860662.html#:~:text=Theo%20s%E1%BB%91%20li%E1%BB%87u%20m%E1%BB%9Bi%20nh%E1%BA%A5t,n%C6%B0%E1%BB%9Bc%20v%C3%A0%20v%C3%B9ng%20l%C3%A3nh%20th%E1%BB%95.">Wiki</a></p>
+    
+            <p class="font">Theo số liệu mới nhất từ Liên Hợp Quốc, dân số hiện tại của Việt Nam là 99.907.255 người (tính đến ngày 15/10/2023. Hiện dân số Việt Nam chiếm 1.24% dân số thế giới. Với con số này, Việt Nam đang đứng thứ 15 trên thế giới trong bảng xếp hạng dân số các nước và vùng lãnh thổ.</p>
+            <blockquote>
+              <p class="font">Theo kết quả Tổng điều tra dân số và nhà ở năm 2019, Tổng số dân của Việt Nam là 96.208.984 người, trong đó, dân số nam là 47.881.061 người, chiếm 49,8% và dân số nữ là 48.327.923 người, chiếm 50,2%. Việt Nam là quốc gia đông dân thứ ba trong khu vực Đông Nam Á (sau Indonesia và Philippines).</p>
+            </blockquote>
+            <p class="font">Nếu tình trạng di cư vẫn ở mức độ như năm trước, dân số sẽ tăng 7.363 người. Điều đó có nghĩa là số người chuyển đến Việt Nam để định cư sẽ chiếm ưu thế so với số người rời khỏi đất nước này để định cư ở một nước khác.</p>
+            <h3 class="tp2">Dân số tại các tỉnh, thành phố</h3>
+            <p class="to">Dân số của Việt Nam được phân bố không đồng đều tại các tỉnh, thành phố trên toàn quốc:</p>
+            <table >
+              <thead>
+                <tr>
+                  <th class="table">Thành Phố</th>
+                  <th class="table">Dân Số</th>
+                  <th class="table">Tỉ Lệ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr  >
+                  <td class="table">Hồ Chí Minh</td>
+                  <td class="table">13,9 triệu</td>
+                  <td class="table">9,3%</td>
+                </tr>
+                <tr>
+                  <td class="table">Hà Nội</td>
+                  <td class="table">8,33 triệu</td>
+                  <td class="table">8,46%</td>
+                </tr>
+                <tr>
+                  <td class="table">Thanh Hóa</td>
+                  <td class="table">3,72 triệu</td>
+                  <td class="table">3,77%</td>
+                </tr>
+              </tbody>
+              
+            </table>
+    
+            <p class="to">Các địa phương còn lại trong top 10 địa phương đông dân nhất Việt Nam.</p>
+          </article>
+    
+          <article class="">
+            <h2 class="tp2">Nhân khẩu học của Việt Nam</h2>
+            <p class="">December 31, 2022 by <a href="https://sputniknews.vn/20231016/dan-so-viet-nam-2023-thong-ke-hien-nay-bao-nhieu-nguoi-song-tai-quoc-gia-nay-25860662.html#:~:text=Theo%20s%E1%BB%91%20li%E1%BB%87u%20m%E1%BB%9Bi%20nh%E1%BA%A5t,n%C6%B0%E1%BB%9Bc%20v%C3%A0%20v%C3%B9ng%20l%C3%A3nh%20th%E1%BB%95.">danso.org</a></p>
+    
+            <p class="to">Tỉ lệ giới tính tại Việt Nam khá cân đối, với tỷ lệ nam giới và nữ giới là tương đối gần nhau. Tuy nhiên, có một số khu vực có sự chênh lệch giới tính khá đáng kể, ví dụ như các tỉnh miền núi phía Bắc thường có tỷ lệ nam giới cao hơn do ảnh hưởng của tình trạng di cư lao động.</p>
+            <ul>
+              <li class="to">Tỷ lệ tăng dân số: 1,2% (2009).</li>
+              <li class="to">Tỷ số giới tính: 98,1 nam trên 100 nữ.</li>
+              <li class="to">Tỷ lệ dân số sống trong thành thị đã tăng lên khoảng 38,6% vào năm 2021. </li>
+              <li class="to">Mật độ dân số của Việt Nam là 322 người trên mỗi kilômét vuông tính đến 20/10/2023.<br>
+                 (Nguồn: https://danso.org/viet-nam/)</li>
+            </ul>
+            <p class="to">Theo dự báo của Liên Hợp Quốc (UN), dân số Việt Nam dự kiến sẽ tiếp tục tăng nhưng với tốc độ giảm dần trong thập kỷ tới. Dự kiến vào năm 2030, dân số Việt Nam có thể đạt khoảng 105 triệu người. Đến năm 2050, dân số dự kiến sẽ tăng lên khoảng 116 triệu người.</p>
+          </article>
+        </div>
+        <div class="thome10">
+            <div class="thome10-1">
+              <div class="thome11">
+                <h3>Thông tin hôm nay</h3>
+                <hr>
+                <div class="thome12">
+                  <div class="thome13">
+                    <a href="https://baochinhphu.vn/thu-tuong-yeu-cau-quyet-liet-thuc-hien-sap-xep-don-vi-hanh-chinh-cap-huyen-cap-xa-102231017183830154.htm">Thủ tướng yêu cầu quyết liệt thực hiện sắp xếp đơn vị hành chính cấp huyện, cấp xã</a>
+                  </div>
+                  <div class="thome14">
+                    <img src="../baitaplon/hanh-chinh-1697542491867756661889-0-0-412-660-crop-1697542508485796130668.jpg" alt="Ảnh lỗi">
+                  </div>
+                </div>
+                <hr>
+                <div class="thome12">
+                  <a href="https://baochinhphu.vn/chu-de/nua-nhiem-ky-dai-hoi-xiii-cua-dang-nhung-ket-qua-noi-bat-198.htm">Nửa nhiệm kỳ Đại hội XIII của Đảng: Những kết quả nổi bật</a>
+                </div>
+                <hr>
+                <div class="thome12">
+                  <a href="https://baochinhphu.vn/chu-de/gop-y-du-an-luat-dat-dai-sua-doi-192.htm">Góp ý dự án Luật Dân Sự (sửa đổi)</a>
+                </div>
+                <hr>
+                <div class="thome12">
+                  <a href="https://baochinhphu.vn/can-cu-xet-huong-che-do-phu-cap-uu-dai-theo-nghe-102231012083047031.htm">Căn cứ xét hưởng chế độ phụ cấp ưu đãi theo nghề</a>
+                </div>
+                
+              </div>
+              <div class="thome15">
+                <h3>Đáng Chú Ý</h3>
+                <hr>
+                <div class="thome12">
+                  <div class="thome13">
+                  <a href="https://baochinhphu.vn/tiep-tuc-xac-thuc-du-lieu-de-tich-hop-bang-lai-xe-vao-vneid-102231011142010582.htm">Tiếp tục xác thực dữ liệu để tích hợp bằng lái xe vào VNeID</a>
+                  </div>
+                  <div class="thome14">
+                    <img src="../baitaplon/cccd2.jpg" alt="">
+                  </div>
+                </div>
+                <hr>
+                <div class="thome12">
+                  <a href="https://baochinhphu.vn/chu-de/chuyen-doi-so-171.htm">Thực hiện công tác chuyển đổi số nhanh chóng bắt kịp tương lai</a>
+                </div>
+                <hr>
+                <div class="thome12">
+                  <a href="https://thanglong.chinhphu.vn/ha-noi-quyet-tam-hoan-thanh-cac-chi-tieu-nhiem-vu-ve-cchc-chuyen-doi-so-nam-2023-103231017181448747.htm">Hà Nội quyết tâm hoàn thành các chỉ tiêu, nhiệm vụ về CCHC, chuyển đổi số năm 2023</a>
+                </div>
+                <hr>
+                <div class="thome12">
+                  <a href="https://baochinhphu.vn/tang-2-bac-viet-nam-xep-thu-46-chi-so-doi-moi-sang-tao-toan-cau-2023-10223092720022816.htm">Tăng 2 bậc, Việt Nam xếp thứ 46 chỉ số đổi mới sáng tạo toàn cầu 2023</a>
+                </div>
+                
+              </div>
+              <div class="thome16">
+                <div>
+                  <a href="https://chinhphu.vn/gop-y-hien-ke-kien-nghi-gui-den-chinh-phu-thu-tuong-chinh-phu"><img src="../baitaplon/gopy.jpeg" alt="Ảnh lỗi"></a>
+                  
+                </div>
+                <div>
+                  <a href="https://xaydungchinhsach.chinhphu.vn/"><img src="../baitaplon/xayd.jpeg" alt="Ảnh lỗi"></a>
+                </div>
+                <div>
+                  <a href="https://baochinhphu.vn/cong-ttdt-chinh-phu/thong-cao-bao-chi.htm"><img src="../baitaplon/thongcao.png" alt=""></a>
+                </div>
+              </div>
+
+
+            </div>
+            
+        </div>
+        
+      </div>
+    </main>
+
+
+    
+    
+</body>
+</html>

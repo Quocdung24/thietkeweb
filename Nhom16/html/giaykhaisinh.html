@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/giaykhaisinh.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="dangky.html">
+    <link rel="stylesheet" href="dangnhap.html">
+    <title>Quản lí hộ khẩu</title>
+    <script src="../javascript/java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    
+</head>
+
+<body>
+  
+  <div class="menu">
+    <div class="first">
+            <img src="../baitaplon/huy.png" >
+        <p>
+            Cổng thông tin quốc gia về <br>
+            quản lí hộ khẩu dân cư
+        </p>
+        
+    </div>  
+  <div >
+    
+      <li >
+        <a  href="dangnhap.html"  ">Sign Up </a>
+      </li>
+      <li >
+        <a  href="dangky.html" "> Log in </a>
+      </li>
+    
+    
+    
+  </div>
+</div>
+
+<div class="instruction " >
+    <nav>
+        <ul>
+            <li>
+              <a class="dropbtn"  href="baitaplon.html" onclick="an('tt') ;hien('container1');an('cuoi')"><i class="fa fa-fw fa-home"></i> Home</a> 
+            </li>
+            
+              <li class="dropdown">
+                <a  class="dropbtn" href="ttch.html" onclick="hien('tt'); hien('ttch');an('tttv1');an('tttv2');an('tttv3');an('ttch1');an('container1')">Hồ sơ cá nhân</a>
+                <!-- cần bổ sung giao diện kéo xuống thông tin cá nhân -->
+                <div class="dropdown-content">
+                  <!-- <a href="#ttch" onclick="hien('tt')">Thông tin cá nhân</a> -->
+                  <!-- <a href="#">Xuất trình giấy tờ</a> -->
+                  <!-- <a href="#tttv1" onclick="myFunctionSearch1">Quản lí thành viên</a> -->
+                  <!-- <a href="#">Chỉnh sửa thông tin</a> -->
+                </div>
+              </li>
+              <li class="dropdown">
+                <a  class="dropbtn" onclick="hien('tt');hien('ttch');an('ttch1');an('tttv1');an('tttv2');an('tttv3');an('container1')" href="ttch.html">Tra cứu thông tin</a>
+                <div class="dropdown-content">
+                  <a href="ttch.html" onclick="hien('ttch');hien('ttch1');an('tttv3');an('tttv1');an('tttv2');hien('tt');an('container1')">Thông tin chủ hộ</a>
+                  <a href="tttv.html" onclick="click0('tttv1');an('ttch');hien('ttch1');an('tttv2');an('tttv3');hien('tt');an('container1')">Thông tin thành viên</a>
+                  <!-- <a href="#">Các thành viên khác</a> -->
+                </div>
+              </li>
+              <li class="dropdown">
+                <a  class="dropbtn">Xuất trình giấy tờ</a>
+                <div class="dropdown-content">
+                  <a href="giaykhaisinh.html">Giấy khai sinh</a>
+                  <a href="kethon.html">Giấy kết hôn</a>
+                  <a href="tamtru.html">Giấy chứng nhận tạm trú</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a  class="dropbtn" href="khac1.html">Khác</a>
+                <div class="dropdown-content">
+                  <a href="khac1.html">Điều khoản & dịch vụ</a>
+                  <!-- <a href="#">Hotline hỗ trợ</a> -->
+                  <a href="khac2.html">Ý kiến phản hồi</a>
+                  <a href="khac3.html">Xin cấp giấy tờ</a>
+                </div>
+              </li>
+              <li class="dropdown search-container" >
+                <a  class="dropbtn" href="taikhoan.html" onclick="an('container1');hien('cuoi')" ><i class="fa fa-fw fa-user"></i> </a>
+                <div class="dropdown-content dropdown-content1">
+                  <a href="taikhoan.html#tttk">Thông tin tài khoản</a>
+                  <a href="taikhoan.html#mk">Cài đặt & Quyền Riêng Tư</a>
+                  <a href="taikhoan.html#nk">Quản lý thiết bị</a>
+                  <a href="dangnhap.html" onclick="alert2()">Đăng xuất</a>
+                </div>
+              </li>
+              <form >
+              <li class="dropdown search-container">
+                <a class="dropbtn " href="#search" onclick="click0('searchan'),viet()"><i class="fa fa-fw fa-search"></i> Search</a> 
+              </li>
+            </form>
+        </ul>
+    </nav> 
+</div>
+<div class="hoso "  >
+  <div class="w3-content learntocodecontent" > 
+    
+    <form class="example"  >
+      <input type="text" placeholder="Search here..." id="search"  autocomplete="off"   >
+      <i class="fa fa-fw fa-search" onclick="alert1()" ></i>
+    </form>  
+    <h3 id="searchan"  > 
+     
+    </h3>
+  </div>
+</div>
+    <div class="dcontainer">
+        <div class="hearder">
+            <div class="phan1">
+                <h2>ỦY BAN NHÂN DÂN</h2>
+                <p>Xã phường:Ngọc hiệp</p>
+                <p>Huyện/Quận:Quốc Oai</p>
+                <p>Tỉnh/Thành Phố:Hà Nội</p>
+             </div>
+            <div class="middle">
+                <h2>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h2>
+                <h2>Độc lập-Tự do-Hạnh phúc</h2>
+                <hr>
+            </div>
+            <div class="phan2">
+                <h2>Mẫu TP/HT 2</h2>
+                <p>Số 99/1974</p>
+                
+            </div>
+        </div>
+        <div class="dcontent">
+            <div class="img"><img src="../baitaplon/huyhieu.jpg" alt=""></div>
+            <div class=dten><h1>GIẤY KHAI SINH</h1></div>
+            <div class="dnoidung">
+                <h2 class="ddong1"><span>Họ và tên: ................NGUYỄN THANH MINH.............................</span><span>Nam hay nữ:....Nam............</span></h2>
+                <h2 class="ddong2">Ngày tháng năm sinh:................16/07/1974....................................................................................</h2>
+                <h2>............................................................................................................................................................</h2>
+                <h2>Nơi sinh:........xã Ngọc Hiệp, Huyện Quốc Oai, Thành phố Hà Nội.............................................</h2>
+                <h2>............................................................................................................................................................</h2>
+                <h2><span>Dân tộc: ...Kinh............................................</span><span>Quốc tịch:........Việt Nam...........................................</span></h2>
+                <form action="">
+                    <table class="dbang">
+                        <tr>
+                            <td>Phần khai về cha mẹ</td>
+                            <td>Người mẹ</td>
+                            <td>Người cha</td>
+                        </tr>
+                        <tr>
+                            <td>Họ và tên</td>
+                            <td>NGUYỄN THANH VINH</td>
+                            <td>BÙI THU HUYỀN</td>
+                        </tr>
+                        <tr>
+                            <td>Ngày sinh</td>
+                            <td>18/09/1950</td>
+                            <td>01/04/1953</td>
+                        </tr>
+                        <tr>
+                            <td>Dân tộc</td>
+                            <td>Kinh</td>
+                            <td>Kinh</td>
+                        </tr>
+                        <tr>
+                            <td>Quóc tịch</td>
+                            <td>Việt Nam</td>
+                            <td>Việt Nam</td>
+                        </tr>
+                        <tr>
+                            <td>Nghề nghiệp</td>
+                            <td>Bộ đội</td>
+                            <td>Làm nông</td>
+                        </tr>
+                        <tr>
+                            <td>Nơ thường trú</td>
+                            <td>Xã Ngọc Hiệp, Huyện Quốc Oai, Thành phố Hà Nội</td>
+                            <td>Xã Ngọc Hiệp, Huyện Quốc Oai, Thành phố Hà Nội</td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+            </div>
+            <div class="dlastend">
+                <h2>Họ, tên, tuổi, nơi thường trú, số giấy chứng minh của người đứng khai:</h2>
+                  <h2>...Nguyễn Thanh Vinh, 24 tuổi, Xã Ngọc Hiệp, Huyện Quốc Oai, Thành phố Hà Nội.............</h2>
+                  <h2>..số CMND 03420004008197...........................................................................................................</h2>
+        </div>
+        <div class="dend">
+            <div class="left">
+                <h2>Người đứng khai kí</h2>
+                <h2>Chinh</h2>
+                <h2>Nguyễn Văn Chinh</h2>
+            </div>
+            <div class="right">
+                <h2>Đăng kí ngày..16..tháng ..07..năm..1074..</h2>
+                <h2>T/M ỦY BAN NHÂN DÂN</h2>
+                <h2>Đường</h2>
+                <h2>Đào Văn Đường</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
