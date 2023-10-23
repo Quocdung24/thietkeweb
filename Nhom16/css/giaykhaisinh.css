@@ -308,3 +308,14 @@ div.right>h2:last-child{
   padding-left: 100px;
   font-family: 'Pacifico', cursive;
 }
+footer{
+  background-color: #38444d;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer > span{
+  margin-left: 50px;
+  font-size: 18px;
+}
