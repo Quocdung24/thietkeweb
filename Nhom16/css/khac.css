@@ -292,7 +292,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea {
-  width: 90%;
+  width: 95%;
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ccc;
@@ -370,3 +370,14 @@ input[type="submit"]:hover {
 #khac3{
   display: none;
 } */
+footer{
+  background-color: #38444d;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer > span{
+  margin-left: 50px;
+  font-size: 18px;
+}
