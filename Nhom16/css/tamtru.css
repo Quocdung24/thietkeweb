@@ -284,3 +284,14 @@ form.example i {
 .hearder>h2:nth-last-of-type(2){
     text-decoration: underline;
 }
+footer{
+  background-color: #38444d;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer > span{
+  margin-left: 50px;
+  font-size: 18px;
+}
