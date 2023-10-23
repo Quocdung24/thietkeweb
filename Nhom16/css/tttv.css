@@ -390,3 +390,14 @@ div.a
   margin-top: 8px!important;
   margin-bottom:8px;
 }
+footer{
+  background-color: #38444d;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+footer > span{
+  margin-left: 50px;
+  font-size: 18px;
+}
