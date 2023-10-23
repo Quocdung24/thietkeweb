@@ -226,11 +226,12 @@ form.example i {
     width: 950px;
     height: 1100px;
     background-color: aliceblue;
-    margin-left: 300px;
+    margin: 0 auto;
     box-shadow: 5px 5px 5px wheat;
 }
 .noidung{
     padding-left:  50px;
+    text-align: center;
 }
 .header{
     text-align: center;
